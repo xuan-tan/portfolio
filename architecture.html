@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Tan Xuan - Architecture</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">work</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="index.html">shop</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">about</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="contact.html">contact</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="branding">
+          <div>TAN XUAN</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <!-- everything below the nav bar -->
+
+      <div class="skills-items-wrapper">
+
+        <a href="bat-house.html" class="skills-item-wrapper">
+
+          <div class="skills-img-background" style="background-image:url(Images/architecture/bathouse.jpg);"></div>
+          <!-- controls background image calling to the url location of image -->
+
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">
+              A Bat-shit Crazy House
+              
+            </div>
+
+          </div>
+        </a>
+
+        <a href="automobile-experience-center.html" class="skills-item-wrapper">
+
+          <div class="skills-img-background" style="background-image:url(Images/architecture/automobile.jpg)"></div>
+          <!-- controls background image calling to the url location of image -->
+
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">
+            Automobile Experience Center
+            </div>
+
+          </div>
+        </a>
+        
+
+        <a href="tropical-roof.html" class="skills-item-wrapper">
+
+          <div class="skills-img-background" style="background-image:url(Images/architecture/BendBoo.jpg)"></div>
+          <!-- controls background image calling to the url location of image -->
+
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">
+              Tropical Roof
+            </div>
+
+          </div>
+        </a>
+
+        <a href="kasbah.html" class="skills-item-wrapper">
+
+          <div class="skills-img-background" style="background-image:url(Images/architecture/kasbah.jpg)"></div>
+          <!-- controls background image calling to the url location of image -->
+
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">
+              Regenerative Desert Kasbah
+              
+            </div>
+
+          </div>
+        </a>
+
+        <a href="iLight.html" class="skills-item-wrapper">
+
+          <div class="skills-img-background" style="background-image:url(Images/architecture/pavilion.jpg)"></div>
+          <!-- controls background image calling to the url location of image -->
+
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">
+              iLight Pavilion 2017
+              
+            </div>
+
+          </div>
+        </a>
+
+        <a href="bikehub.html" class="skills-item-wrapper">
+
+          <div class="skills-img-background" style="background-image:url(Images/architecture/bikehub.png);"></div>
+          <!-- controls background image calling to the url location of image -->
+
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">
+              Urban Bicycle Hub
+              
+            </div>
+
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+<script>
+  const skillsItems = document.querySelectorAll('.skills-item-wrapper')
+
+  skillsItems.forEach(skillsItem => {
+    
+    console.log(skillsItem.childNodes);
+
+    skillsItem.addEventListener('mouseover', () => {
+     skillsItem.childNodes[1].classList.add('img-darken');
+     skillsItem.childNodes[1].classList.add('img-zoom');
+    })
+
+    skillsItem.addEventListener('mouseout', () => {
+     skillsItem.childNodes[1].classList.remove('img-darken');
+     skillsItem.childNodes[1].classList.remove('img-zoom');
+    
+    })
+    
+  })
+</script>
+
+</html>

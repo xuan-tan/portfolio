@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Tan Xuan Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">work</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="shop.html">shop</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">about</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="contact.html">contact</a>
+        </div>
+
+      </div>
+
+      <div class="right-side">
+        <div class="branding">
+          <div>TAN XUAN</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <!-- everything below the nav bar -->
+
+      <div class="portfolio-items-wrapper">
+        <!-- this is what stores collection of portfolio items -->
+
+        <a href="architecture.html" class ="portfolio-item-wrapper">
+          <!-- each of the grids are their own wrapper -->
+          
+          <div class="portfolio-img-background" style="background-image:url(Images/home-icons/architecture.jpg)">  
+            <!-- controls background image calling to the url location of image -->       
+          </div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">
+              Architecture Projects
+            </div>
+          </div>
+        </a>
+        
+        <a href="leatherwork.html" class ="portfolio-item-wrapper">
+            <!-- each of the grids are their own wrapper -->
+
+            <div class="portfolio-img-background" style="background-image:url(Images/home-icons/coxnkantz.jpg)">
+              <!-- controls background image calling to the url location of image -->         
+            </div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">
+                Leather and Canvas Work
+              </div>
+            </div>
+        </a> 
+
+        <a href="photosets.html" class="portfolio-item-wrapper">
+          <!-- each of the grids are their own wrapper -->
+          
+          <div class="portfolio-img-background" style="background-image:url(Images/home-icons/photosets.jpg)">      
+            <!-- controls background image calling to the url location of image -->   
+          </div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">
+              Photosets
+            </div>
+          </div>
+        </a> 
+
+      </div>
+    </div>
+
+</body>
+
+<!-- Javascript code comes after body, because
+you don't want your JS to run before the rest of
+your page loads -->
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+  portfolioItems.forEach(portfolioItem => {
+    // define custom function
+    const imgDarken = () => portfolioItem.childNodes[3].classList.add('img-darken');
+    const imgDarkenremove = () => portfolioItem.childNodes[3].classList.remove('img-darken');
+    const imgZoom = () =>  portfolioItem.childNodes[3].classList.add('img-zoom');
+    const imgZoomremove = () =>  portfolioItem.childNodes[3].classList.add('img-zoom-out');
+
+    portfolioItem.addEventListener('mouseenter', () => {
+      imgDarken();
+      imgZoom();
+    })
+
+
+
+    portfolioItem.addEventListener('mouseleave', () => {
+     imgZoomremove();
+     imgDarkenremove();
+    })
+
+    
+  })
+</script>
+</html>

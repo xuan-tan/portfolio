@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Tropical Roof</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">work</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="index.html">shop</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">about</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="contact.html">contact</a>
+        </div>
+
+      </div>
+
+      <div class="right-side">
+        <div class="branding">
+          <div>TAN XUAN</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="content-wrapper">
+        <!-- everything below the nav bar -->
+
+        <div class="banner-wrapper">
+
+            <div class="banner-bg" style="background-image:url(Images/architecture/roof/banner.jpg);background-position: fixed;"></div>
+    
+            <div class="banner-title" style="color: white;">
+    
+              <h2>Bendboo</h2><br>
+              <h4>a Large Tropical Roof</h4>
+    
+            </div>
+        </div>
+
+        <div class="banner-wrapper">
+            <div class="title-left">
+    
+              <b>B. Arch Design Studio 3</b> NUS, Singapore
+            </div>
+        </div>
+    
+        <div class="aki-content-wrapper">
+            <div class="aki-contentL" style="margin-top: 0;">
+                <div class="aki-content-text">
+                    BendBoo was imagined as a simple large span tropical roof, utilising traditional materials and construction techniques to reflect and inspire an eco-friendly, low carbon footprint approach to designing in the tropics.  
+                </div>      
+            </div>
+    
+            <div class="aki-contentC" style="margin-top: 0;">
+                <div class="aki-content-text" >
+                    Simplicity is Key. The basic geometry of the triangle was chosen to convey the design intent. The inherent strength of the triangulated form allowed for the creation of a stable architectural form which we tessellated to achieve the functional requirements of the roof.
+                </div>
+
+            </div>
+
+            <div class="aki-contentR" style="margin-top: 0;">
+                <div class="aki-content-text" >
+                    The unique bending property of bamboo was exploited for its physical strength and flexibility in the design of curves. This project explored the boundaries of what the material of bamboo can offer to create ecofriendly sustainable design in the tropics.
+                </div>
+            </div>
+    
+        </div>
+
+        <div class="banner-wrapper">
+            <div class="title-left">
+    
+              <b>Plans. Sections. Elevations 1:50</b>
+            </div>
+        </div>
+        
+        <div class="aki-content-wrapper">
+
+            <div class="aki-content-tile" style="padding:50px">
+              <img class="aki-img" src="Images/architecture/roof/dwgs.jpg">
+            </div>
+        </div>
+
+        <div class="aki-content-wrapper">
+
+            <div class="aki-content-tile" style="padding:50px">
+              <img class="aki-img" src="Images/architecture/roof/dwgs-2.jpg">
+            </div>
+        </div>
+
+        <div class="banner-wrapper">
+            <div class="title-left">
+    
+              <b>Structural Details. 1:30/1:10</b>
+            </div>
+        </div>
+        
+        <div class="aki-content-wrapper">
+
+            <div class="aki-content-tile" style="padding:50px">
+              <img class="aki-img" src="Images/architecture/roof/dwgs-3.jpg">
+            </div>
+        </div>
+
+        <div class="aki-content-wrapper" >
+            <div class="aki-contentR">
+        
+              <div class="banner-wrapper">
+                <div class="title-left">
+        
+                  <b>Scale Model 1:20</b>
+                </div>
+              </div>
+        
+              <div class="aki-content-tile" style="height: 60vh;">
+                <img id=featured src="Images/architecture/roof/roof.jpg">
+              </div>
+        
+              <div id="slide-wrapper">
+                <img class="thumbnail active" src="Images/architecture/roof/roof.jpg">
+                <img class="thumbnail" src="Images/architecture/roof/roof-2.jpg">
+                <img class="thumbnail" src="Images/architecture/roof/roof-3.jpg">
+                <img class="thumbnail" src="Images/architecture/roof/roof-5.jpg">
+                <img class="thumbnail" src="Images/architecture/roof/roof-6.jpg">
+                <img class="thumbnail" src="Images/architecture/roof/roof-7.jpg">
+              </div>
+        
+            </div>
+        </div>
+
+    </div>
+
+  </div>
+    
+</body>
+<!-- Javascript code comes after body, because
+you don't want your JS to run before the rest of
+your page loads -->
+
+<script>
+    let thumbnails = document.getElementsByClassName('thumbnail')
+  
+    let activeImages = document.getElementsByClassName('active')
+  
+    for (var i=0; i < thumbnails.length; i++){
+  
+      thumbnails[i].addEventListener('mouseover', function(){
+  
+        if (activeImages.length>0){
+          activeImages[0].classList.remove('active')
+        }
+  
+        this.classList.add('active')
+        document.getElementById('featured').src =this.src
+      }
+      
+      )
+    }
+</script>
+
+</html>
