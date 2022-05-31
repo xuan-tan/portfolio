@@ -397,7 +397,7 @@ p{
 .skills-item-wrapper{
     height: 400px;
     width: 100%;
-    flex: 1 1 20em;    
+    flex: 1 1 30%;    
     position:relative;
     object-fit: cover;
     overflow: hidden;
@@ -682,6 +682,16 @@ font-size: 24px;
         overflow: hidden;
        
     }
+
+    .skills-item-wrapper{
+        height: 400px;
+        width: 100%;
+        flex: 1 1 20em;    
+        position:relative;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
     .gallery-wrapper .gallery{
         display: grid;
         grid-template-columns: auto auto auto;
@@ -732,6 +742,16 @@ font-size: 24px;
         overflow: hidden;
        
     }
+
+    .skills-item-wrapper{
+        height: 400px;
+        width: 100%;
+        flex: 1 1 20em;    
+        position:relative;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
     .gallery-wrapper .gallery{
         display: block;
         grid-template-columns: auto auto auto;
