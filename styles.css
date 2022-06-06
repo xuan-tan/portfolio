@@ -489,12 +489,18 @@ font-size: 24px;
     flex:1;
     text-align:justify;
     margin: auto;
+    min-width: 400px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .aki-contentR{
     flex:1;
     text-align:justify ;
     margin: auto;
+    min-width: 400px;
+    padding-left: 40px;
+    padding-right: 40px;
 
 }
 
@@ -502,6 +508,7 @@ font-size: 24px;
     flex:1;
     text-align:justify ;
     margin: auto;
+    min-width: 400px;
 
 }
 
@@ -509,8 +516,6 @@ font-size: 24px;
     box-sizing: border-box;
     padding-bottom: 30px;
     padding-top: 30px;
-    padding-left: 80px;
-    padding-right: 80px;
 }
 
 .aki-content-tile{
@@ -666,8 +671,8 @@ font-size: 24px;
     .aki-content-text{
         padding: 0;
         padding-top: 20px;
-        margin:5px auto;
-        width: 85%;
+        /* margin:5px auto;
+        width: 85%; */
     }
 
     .profile-wrapper{
@@ -772,7 +777,7 @@ font-size: 24px;
     .aki-content-text{
         padding: 0;
         padding-top: 20px;
-        margin:5px auto;
-        width: 85%;
+        /* margin:5px auto;
+        width: 85%; */
     }
 }
