@@ -736,16 +736,13 @@ font-size: 24px;
     .aki-contentL{
         display: block;
         /*top bottom / left right*/
-        margin: 30px 10%;
-        padding: 0px 0px;
         align-items: left;
     }
 
     .aki-contentR{
         display: block;
         /*top bottom / left right*/
-        margin: 30px 10%;
-        padding: 0px 0px;
+
         align-items: left;
     }
     .aki-content-text{
