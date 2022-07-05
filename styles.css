@@ -1,4 +1,12 @@
 /*Master Styles*/
+
+*{
+    Margin: 0;
+    Padding: 0;
+    box-sizing: border-box;
+
+}
+
 body {
     font-family: "Lato", sans-serif;
     
@@ -413,9 +421,7 @@ p{
 }
 
 /*Aki Page Styles*/
-
 .banner-wrapper{
-
     display: grid;
     grid-template-columns: 1fr;
     position: relative;
@@ -424,7 +430,6 @@ p{
     height: 50px;
 }
 .banner-bg{
-
     height: 500px;
     width: 100%;
     background-position: center;
@@ -473,8 +478,6 @@ flex-direction: column;
 /*align aligns left to right*/
 align-items: center;
 letter-spacing: 3px;
-
-padding-left: 80px;
 font-size: 24px;
 }
 
@@ -650,11 +653,35 @@ font-size: 24px;
 }
 
 /*media query for responsive screen design*/
-@media only screen and (max-width:768px){
+
+/* x-small devices */
+@media only screen and (max-width:600px) {
+    .nav-wrapper{
+        font-size: 0.8em;
+        /*em is one default font size*/
+        text-transform: uppercase;
+        justify-content: space-between;
+    }
+
+    .aki-content-wrapper{
+        display: block;
+    }
+    .banner-bg{
+        height: 75vh;
+        /* width: 100vw; */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .banner-title h2{
+        font-size: 1.5em;
+        max-width: 90vw;
+    }
+    .banner-title h4{
+        font-size: 0.8em;
+        max-width: 90vw;
+    }
     .title-left{
-        /*move all the text wrapper to the top, use flexbox
-    to continue positioning it in the center*/
-    display: flex;
     /*internal containers will stack one above the other*/
     flex-direction: column;
     /*align aligns left to right*/
@@ -662,30 +689,22 @@ font-size: 24px;
     letter-spacing: 3px;
     /*top bottom / left right*/
     margin: 30px 10%;
-}
+    } 
     
-    .aki-content-wrapper{
-        flex-direction: column;
+    .title-center {
+        padding: 0px 0px;
+        font-size: 1.1em;
     }
-
-    .aki-content-text{
-        padding: 0;
-        padding-top: 20px;
-        /* margin:5px auto;
-        width: 85%; */
-    }
-
     .profile-wrapper{
         flex-direction: column;
     }
-
+        
     .profile-wrapper .profile-contentL .img{
         max-width:90vw;
         width: 100%;
         height: auto;
         margin:0 auto;
         overflow: hidden;
-       
     }
 
     .skills-item-wrapper{
@@ -696,14 +715,48 @@ font-size: 24px;
         object-fit: cover;
         overflow: hidden;
     }
-    
+
     .gallery-wrapper .gallery{
-        display: grid;
+        display: block;
         grid-template-columns: auto auto auto;
     }
-}
-/* for phone screens*/
-@media only screen and (max-width:430px){
+
+    .gallery-wrapper .gallery .img{
+        display: block;
+        width:100%;
+        height: 100%;
+        margin: 2% 0;
+    }
+
+    .gallery-wrapper .gallery .img img{
+        display: block;
+        filter: brightness(1) grayscale(0);
+    }
+
+    .aki-contentL{
+        display: block;
+        /*top bottom / left right*/
+        margin: 30px 10%;
+        padding: 0px 0px;
+        align-items: left;
+    }
+
+    .aki-contentR{
+        display: block;
+        /*top bottom / left right*/
+        margin: 30px 10%;
+        padding: 0px 0px;
+        align-items: left;
+    }
+    .aki-content-text{
+        padding: 0px 0px;
+        margin: 0px 0px;
+    }
+}   
+
+/*small-medium devices*/
+
+@media only screen and (min-width:601px) and (max-width:991px) {
     .title-left{
         /*move all the text wrapper to the top, use flexbox
     to continue positioning it in the center*/
@@ -745,7 +798,6 @@ font-size: 24px;
         height: auto;
         margin:0 auto;
         overflow: hidden;
-       
     }
 
     .skills-item-wrapper{
@@ -780,4 +832,42 @@ font-size: 24px;
         /* margin:5px auto;
         width: 85%; */
     }
+    
+    .aki-content-wrapper{
+        flex-direction: column;
+    }
+
+    .aki-content-text{
+        padding: 0;
+        padding-top: 20px;
+        /* margin:5px auto;
+        width: 85%; */
+    }
+
+    .profile-wrapper{
+        flex-direction: column;
+    }
+
+    .profile-wrapper .profile-contentL .img{
+        max-width:90vw;
+        width: 100%;
+        height: auto;
+        margin:0 auto;
+        overflow: hidden;
+    }
+
+    .skills-item-wrapper{
+        height: 400px;
+        width: 100%;
+        flex: 1 1 20em;    
+        position:relative;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    .gallery-wrapper .gallery{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
 }
+
