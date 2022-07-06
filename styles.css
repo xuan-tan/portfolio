@@ -63,7 +63,7 @@ p{
 /*text-styles*/
 .grey-text{
     color:rgb(168, 168, 168);
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .italics{
@@ -76,6 +76,7 @@ p{
 
 .teal-text{
     color:rgb(11, 201, 207);
+    font-size: 14px;
     font-weight: 50 ;    
 }
 
