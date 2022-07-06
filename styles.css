@@ -44,6 +44,16 @@ p{
     font-weight: 50 ;
     margin: 0 auto;
 }
+
+ul {
+    margin-left: 1.4em;
+    line-height: 24px;
+}
+
+li {
+    list-style-position: outside;
+    padding-left: 0.5em;
+}
 .container{
     display: grid;
     grid-template-columns: 1fr;
