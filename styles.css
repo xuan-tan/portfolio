@@ -560,8 +560,10 @@ font-size: 24px;
 }
 
 /*Blog Page Styles*/
-
 .blog-badge{
+    flex: 1;
+}
+.blog-badge > div{
     flex:1;
     background:transparent;
     width: 85%;
@@ -570,7 +572,11 @@ font-size: 24px;
     align-items: center;
 }
 
-.blog-contentL{
+.blog-contentL > img{
+    height: 200px;
+
+    object-fit: cover;
+    padding-bottom: 20px;
     
 }
 
@@ -689,7 +695,16 @@ font-size: 24px;
         /*em is one default font size*/
         text-transform: uppercase;
         justify-content: space-between;
+        padding: 20px 20px;
     }
+
+    /*traversing down a div tree using '>'*/
+.nav-wrapper > div {
+    margin-right: 15px;
+    font-size: 0.85em;
+    /*em is one default font size*/
+    text-transform: uppercase;
+}
 
     .aki-content-wrapper{
         display: block;
