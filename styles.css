@@ -559,7 +559,26 @@ font-size: 24px;
 
 }
 
-/*Shop Page Styles*/
+/*Blog Page Styles*/
+
+.blog-badge{
+    flex:1;
+    background:transparent;
+    width: 85%;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-contentL{
+    
+}
+
+.blog-contentR{
+    
+}
+
+/*Coming Soon Page Styles*/
 
 .logo-wrapper{
     display: flex;
