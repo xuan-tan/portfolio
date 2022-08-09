@@ -32,9 +32,15 @@ h3{
 
 h4{
     margin: 0px;
-    letter-spacing: 2px;
+    font-size: 0.9em;
+    letter-spacing: 1.2px;
     padding-bottom: 10px;
     
+}
+
+h5{
+    padding-bottom: 5px;
+    font-size: 0.7em;
 }
 
 p{
@@ -560,6 +566,12 @@ font-size: 24px;
 }
 
 /*Blog Page Styles*/
+.blog-content-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
 .blog-badge{
     flex: 1;
 }
@@ -567,20 +579,20 @@ font-size: 24px;
     flex:1;
     background:transparent;
     width: 85%;
-    margin:auto;
+    margin: auto;
     justify-content: center;
     align-items: center;
 }
 
-.blog-contentL > img{
+.blog-contentL > .aki-img{
     height: 200px;
-
     object-fit: cover;
     padding-bottom: 20px;
     
 }
 
 .blog-contentR{
+    text-align: justify;
     
 }
 
@@ -797,6 +809,40 @@ font-size: 24px;
         padding: 0px 0px;
         margin: 0px 0px;
     }
+
+        /*Blog Page Styles*/
+    .blog-content-wrapper{
+        width: 100%;
+        display: block;
+        flex-direction: row;
+    }
+    
+    .blog-badge{
+        display: flex;
+        padding-bottom: 10px;
+    }
+
+    .blog-contentL{
+        flex: 1;
+        padding: 5%;
+    }
+
+    .blog-contentR{
+        flex: 1;
+        padding: 5%;
+    }
+    .blog-badge > div{
+        background:transparent;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog-contentL > .aki-img{
+        object-fit: cover;
+        padding: 0px;
+    }
+
+
 }   
 
 /*small-medium devices*/
