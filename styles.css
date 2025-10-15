@@ -38,9 +38,21 @@ h4{
     
 }
 
-h5{
+h5{ 
+    /* for footnotes */
     padding-bottom: 5px;
     font-size: 0.7em;
+    letter-spacing: 0.9px;
+}
+
+h6{
+    margin: 0px;
+    font-size: 0.9em;
+    letter-spacing: 1.2px;
+    padding-bottom: 10px;
+    font-weight: 150;
+    text-decoration: underline;
+    
 }
 
 p{
@@ -48,7 +60,7 @@ p{
     font-weight: 50 ;
     margin: 0 auto;
 }
-
+ 
 ul {
     margin-left: 1.4em;
     line-height: 24px;
@@ -468,7 +480,7 @@ li {
     height: 100%;
     width: 100%;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 .title-left{
@@ -479,9 +491,9 @@ li {
     flex-direction: column;
     /*align aligns left to right*/
     align-items: left;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     /*top bottom / left right*/
-    margin: 30px 80px;
+    margin: 30px 40px;
 }
 
 .title-center{
@@ -492,7 +504,7 @@ display: flex;
 flex-direction: column;
 /*align aligns left to right*/
 align-items: center;
-letter-spacing: 3px;
+letter-spacing: 2px;
 font-size: 24px;
 }
 
@@ -505,7 +517,7 @@ font-size: 24px;
 
 .aki-contentL{
     flex:1;
-    text-align:justify;
+    text-align:left;
     margin: auto;
     min-width: 400px;
     padding-left: 40px;
@@ -649,7 +661,7 @@ font-size: 24px;
     margin: auto;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 40px;
 }
 

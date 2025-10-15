@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Innovation Strategy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">work</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="https://www.instagram.com/coxnkantz/">shop</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="blog.html">blog</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">about</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="contact.html">contact</a>
+        </div>
+
+      </div>
+
+      <div class="right-side">
+        <div class="branding">
+          <div>TAN XUAN</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="content-wrapper">
+      <!-- everything below the nav bar -->
+
+      <div class="banner-wrapper">
+
+        <div class="banner-bg" style="background-image:url(Images/rnd/strat-doc-1.jpg)"></div>
+
+        <div class="banner-title" style="color: white;">
+
+          <h2>Product Innovation Strategy</h2><br>
+          <h4>UX-Focused</h4>
+
+        </div>
+      </div>
+      
+      <div class="aki-content-wrapper" style="background-color: rgb(113, 130, 131);" >     
+        <div class="aki-contentL">
+          <div class="title-left" style="color: white;">
+            <h2>Developing A New Product Innovation Framework </h2>
+          </div>
+
+          <div class="aki-contentL" style="color: white;">
+            <h6>Problem / Opportunity:<br></h6>
+
+              <h4>Small, incremental improvements with each update are a tried and tested formula. A challenge was put forth to discover and deliver outsized, out-of-box ideas.</h4>
+            
+             <br>
+             <h6>Action:<br></h6>
+
+              <h4>I authored a 5-step workflow to guide engineering teams to:
+                <ul>
+                  <li>scope projects</li>
+                  <li>perform data collection</li>
+                  <li>analyse and decide</li>
+                  <li>prototype</li>
+                  <li>test and deliver new product concepts</li>
+              </ul>
+            </h4>
+            
+          </div>
+        </div>
+        <div class="aki-contentR" style="flex: 2;">
+    
+          <div class="aki-img" style="padding: 40px 80px;">
+            <img id=featured src="Images/rnd/strat-doc-2.jpg" >
+          </div>
+    
+          <div id="slide-wrapper">
+            <img class="thumbnail active" src="Images/rnd/strat-doc-2.jpg">
+            <img class="thumbnail" src="Images/rnd/strat-doc-3.jpg">
+            <img class="thumbnail" src="Images/rnd/strat-doc-4.jpg">
+          </div>
+        </div>
+      </div>
+
+      <div class="banner-wrapper">
+        <div class="title-left" style="padding-bottom: 30px; padding-top: 30px;">
+          <h6>Referenced Design-Thinking Resources</h6>
+          <h5>1. Ulwick, Anthony W. 2016. Jobs to Be Done: Theory to Practice.<br>
+            2. Christensen, Clayton M., Taddy Hall, Karen Dillon, and David S. Duncan. 2016. Competing Against Luck: The Story of Innovation and Customer Choice. HarperBusiness.<br>
+            3.Knapp, Jake. 2017. Sprint. Bentang Pustaka.
+          </h5>
+        </div>
+      </div> 
+
+      <div class="aki-content-wrapper" style="background-color: rgb(113, 130, 131);" >     
+        <div class="aki-contentL">
+          <div class="title-left" style="color: white;">
+            <h2>Product Roadmap Management</h2>
+          </div>
+
+          <div class="aki-contentL" style="color: white;">
+            <h6>Problem / Opportunity:<br></h6>
+
+              <h4>Shimano develops several product lines.<br><br>These lines are renewed periodically to address market requirements and technology advancement.</h4>
+            
+             <br>
+             <h6>Action:<br></h6>
+
+              <h4>I led user and market research on CUES and Tourney product lines, contributing to global product roadmap planning. </h4>
+            
+          </div>
+        </div>
+        <div class="aki-contentR" style="flex: 2;">
+    
+          <div class="aki-img" style="padding: 40px 80px;">
+            <img id=featured2 src="Images/rnd/strat-doc-7.jpg" >
+          </div>
+    
+          <div id="slide-wrapper">
+            <img class="thumbnail2 active2" src="Images/rnd/strat-doc-7.jpg">
+            <img class="thumbnail2" src="Images/rnd/strat-doc-6.jpg">
+            <img class="thumbnail2" src="Images/rnd/strat-doc-5.jpg">
+          </div>
+        </div>
+      </div>     
+    </div>
+  </div>
+</body>
+
+<!-- Javascript code comes after body, because
+you don't want your JS to run before the rest of
+your page loads -->
+<script>
+  let thumbnails = document.getElementsByClassName('thumbnail')
+
+  let activeImages = document.getElementsByClassName('active')
+
+  for (var i=0; i < thumbnails.length; i++){
+
+    thumbnails[i].addEventListener('mouseover', function(){
+
+      if (activeImages.length>0){
+        activeImages[0].classList.remove('active')
+      }
+
+      this.classList.add('active')
+      document.getElementById('featured').src =this.src
+    }
+    
+    )
+  }
+
+  let thumbnails2 = document.getElementsByClassName('thumbnail2')
+
+  let activeImages2 = document.getElementsByClassName('active2')
+
+  for (var i=0; i < thumbnails2.length; i++){
+
+    thumbnails2[i].addEventListener('mouseover', function(){
+
+      if (activeImages2.length>0){
+        activeImages2[0].classList.remove('active2')
+      }
+
+      this.classList.add('active2')
+      document.getElementById('featured2').src =this.src
+    }
+    
+    )
+  }
+
+</script>
+</html>

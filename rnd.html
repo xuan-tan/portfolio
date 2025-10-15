@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Tan Xuan - Product RnD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">work</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="https://www.instagram.com/coxnkantz/">shop</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="blog.html">blog</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">about</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="contact.html">contact</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="branding">
+          <div>TAN XUAN</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <!-- everything below the nav bar -->
+
+      <div class="banner-wrapper">
+
+        <div class="banner-bg" style="background-image: url(Images/rnd/strat-doc-9.jpg)"></div>
+
+        <div class="banner-title" style="color: white;">
+
+          <h2>New Product Research & Development</h2><br>
+          <h4>New product innovation is inherently risky. <br> I bridge unaddressed market needs to development teams, helping them build the right thing right.<br> My experience spans innovation strategy, insights and analytics, and team activation.
+          </h4>
+        </div>
+      </div>
+
+      <div class="skills-items-wrapper">
+
+                <a href="innovation-strategy.html" class="skills-item-wrapper" style="flex-basis: 100%">
+
+          <div class="skills-img-background" style="background-image:url(Images/rnd/strat-doc-2.jpg);"></div>
+          <!-- controls background image calling to the url location of image -->
+
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">
+              Product Strategy,
+              <br>Developing Innovation Frameworks
+              
+            </div>
+
+          </div>
+        </a>
+
+        <a href="insights-analytics.html" class="skills-item-wrapper" style="flex-basis: 100%">
+
+          <div class="skills-img-background" style="background-image:url(Images/rnd/mkt-rep-19.jpg);"></div>
+          <!-- controls background image calling to the url location of image -->
+
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">
+              Insights & Analytics,
+              <br>Executing Market Research
+              
+            </div>
+
+          </div>
+        </a>
+
+        <a href="team-collab.html" class="skills-item-wrapper" style="flex-basis: 100%">
+
+          <div class="skills-img-background" style="background-image:url(Images/rnd/sprint-fac-1.jpg);"></div>
+          <!-- controls background image calling to the url location of image -->
+
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">
+              Team Collaboration and Activation              
+            </div>
+
+          </div>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+<script>
+  const skillsItems = document.querySelectorAll('.skills-item-wrapper')
+
+  skillsItems.forEach(skillsItem => {
+    
+    console.log(skillsItem.childNodes);
+
+    skillsItem.addEventListener('mouseover', () => {
+     skillsItem.childNodes[1].classList.add('img-darken');
+     skillsItem.childNodes[1].classList.add('img-zoom');
+    })
+
+    skillsItem.addEventListener('mouseout', () => {
+     skillsItem.childNodes[1].classList.remove('img-darken');
+     skillsItem.childNodes[1].classList.remove('img-zoom');
+    
+    })
+    
+  })
+</script>
+
+</html>
